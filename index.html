@@ -36,6 +36,37 @@
 
 <body>
 
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="102110051546902"
+  theme_color="#ffc300"
+  logged_in_greeting="¡Hola!, ¿en qué puedo ayudarte?"
+  logged_out_greeting="¡Hola!, ¿en qué puedo ayudarte?">
+      </div>
+
+<div class="fb-customerchat"
+ page_id="<PAGE_ID>">
+</div>
+
   <!-- ======= Navbar ======= -->
   <nav id="main-nav">
     <div class="row">
@@ -241,13 +272,18 @@
                 <ul class="contact-details">
                   <li><span>David A. Santana M.</span></li>
                   <li><span>Correo: davidalej1202@gmail.com</span></li>
-		  <li><span>Teléfono: 097-883-4003</span></li>
-                  <li><span>Mensajería: <a href="http://fb.me/msg/davidchiispiitas" style="color:blue"><b>Messenger</b></a></span></li>
+		  <li><span>Teléfono: 097-883-4003.</span></li>
+		  <li><span>Métodos de pago: Banco Pichincha, PayPal.</span></li>
                 </ul>
-
-              </div>
+               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+
+<!-- End Contact Section -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
